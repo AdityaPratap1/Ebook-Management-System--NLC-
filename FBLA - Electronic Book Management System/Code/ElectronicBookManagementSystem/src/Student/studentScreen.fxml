@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="studentScreenAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="700.0"
+            prefWidth="750.0" style="-fx-background-color: #f5f5f5;" styleClass="login_background"
+            stylesheets="@../StyleSheets_Images/LogInStyle.css" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.StudentScreenController">
+    <VBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="700.0" prefWidth="98.0"
+          stylesheets="@../StyleSheets_Images/LogInStyle.css">
+        <styleClass>
+            <String fx:value="login_background"/>
+            <String fx:value="vbox_background"/>
+        </styleClass>
+        <HBox onMouseClicked="#loadStudentDashboard" prefHeight="100.0" prefWidth="200.0" styleClass="hbox"
+              stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css" translateY="40.0">
+            <ImageView fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true"
+                       translateX="20.0" translateY="20.0">
+                <Image url="@../StyleSheets_Images/Images/home.png"/>
+            </ImageView>
+            <Label text="Home" textFill="WHITE" translateX="-24.0" translateY="80.0"/>
+        </HBox>
+        <HBox fx:id="bookListHbox" onMouseClicked="#loadBookListScreen" prefHeight="97.0" prefWidth="98.0"
+              styleClass="hbox" stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css" translateY="40.0">
+            <ImageView fitHeight="56.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true"
+                       translateX="20.0" translateY="20.0">
+                <Image url="@../StyleSheets_Images/Images/book.png"/>
+            </ImageView>
+            <Label prefHeight="18.0" prefWidth="80.0" text="Catalog" textFill="WHITE" translateX="-26.0"
+                   translateY="80.0"/>
+        </HBox>
+        <HBox onMouseClicked="#loadReturnBookListScreen" prefHeight="100.0" prefWidth="200.0" styleClass="hbox"
+              stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css" translateY="40.0">
+            <ImageView fitHeight="58.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true"
+                       translateX="20.0" translateY="15.0">
+                <Image url="@../StyleSheets_Images/Images/issued.png"/>
+            </ImageView>
+            <Label prefWidth="200.0" text="Issued" textFill="WHITE" translateX="-24.0" translateY="70.0"/>
+        </HBox>
+        <HBox fx:id="recomBooksHbox" onMouseClicked="#loadRecomBookScreen" prefHeight="100.0" prefWidth="200.0"
+              styleClass="hbox" stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css" translateY="30.0">
+            <ImageView fitHeight="62.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true"
+                       translateX="15.0" translateY="10.0">
+                <Image url="@../StyleSheets_Images/Images/recommendedbooks.png"/>
+            </ImageView>
+            <Label prefHeight="18.0" prefWidth="200.0" text=" Recom Books" textFill="WHITE" translateX="-31.0"
+                   translateY="75.0"/>
+        </HBox>
+        <HBox fx:id="myProfileHbox" onMouseClicked="#loadProfileScreen" prefHeight="100.0" prefWidth="200.0"
+              styleClass="hbox" stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css" translateY="30.0">
+            <Label text="Profile" textFill="WHITE" translateX="33.0" translateY="70.0"/>
+            <ImageView fitHeight="64.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true"
+                       translateX="-15.0" translateY="15.0">
+                <Image url="@../StyleSheets_Images/Images/ManagerProfile.png"/>
+            </ImageView>
+        </HBox>
+        <HBox fx:id="helpHbox" onMouseClicked="#loadHelpScreen" prefHeight="100.0" prefWidth="200.0"
+              styleClass="hbox" stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css" translateY="30.0">
+            <Label text="Help" textFill="WHITE" translateX="40.0" translateY="75.0"/>
+            <ImageView fitHeight="68.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true"
+                       translateX="-5.0" translateY="15.0">
+                <Image url="@../StyleSheets_Images/Images/help.png"/>
+            </ImageView>
+        </HBox>
+        <JFXButton fx:id="studentLogOut" onAction="#logOutStudent" style="-fx-border-color: #ffffff;"
+                   styleClass="login-button" stylesheets="@../StyleSheets_Images/LogInStyle.css" text="Log out"
+                   textFill="WHITE" translateX="20.0" translateY="40.0"/>
+    </VBox>
+    <BorderPane fx:id="studentScreenBorderPane" layoutX="98.0" layoutY="64.0" prefHeight="635.0" prefWidth="652.0"/>
+    <Label fx:id="studentScreenTitleLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="360.0" layoutY="14.0">
+        <font>
+          <Font name="Garamond Bold" size="29.0"/>
+        </font>
+    </Label>
+    <ImageView fitHeight="35.0" fitWidth="27.0" layoutX="636.0" layoutY="18.0" onMouseClicked="#minimizeClick"
+               pickOnBounds="true" preserveRatio="true">
+        <Image url="@../StyleSheets_Images/Images/minimize.png"/>
+    </ImageView>
+    <ImageView fitHeight="35.0" fitWidth="27.0" layoutX="678.0" layoutY="18.0" onMouseClicked="#closeClick"
+               pickOnBounds="true" preserveRatio="true">
+        <Image url="@../StyleSheets_Images/Images/close.png"/>
+    </ImageView>
+    <Label fx:id="recomBooksTitle" layoutX="257.0" layoutY="14.0">
+        <font>
+          <Font name="Garamond Bold" size="29.0"/>
+        </font>
+    </Label>
+    <Label fx:id="issuedBooksScreenTitle" layoutX="333.0" layoutY="10.0">
+        <font>
+          <Font name="Garamond Bold" size="29.0"/>
+        </font>
+    </Label>
+</AnchorPane>

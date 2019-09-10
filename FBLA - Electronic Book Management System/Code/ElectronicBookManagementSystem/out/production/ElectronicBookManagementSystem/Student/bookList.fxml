@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0"
+            prefWidth="652.0" styleClass="anchor-background" stylesheets="@../StyleSheets_Images/LogInStyle.css"
+            xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Student.BookListController">
+    <JFXTextField fx:id="filterDataTxt" alignment="CENTER" focusColor="#4584a1" layoutX="208.0" layoutY="-12.0"
+                  prefHeight="25.0" prefWidth="245.0" promptText="Search Books  or Authors" styleClass="text-fields"
+                  unFocusColor="#9e9e9e">
+        <font>
+          <Font size="14.0"/>
+        </font>
+    </JFXTextField>
+    <JFXTreeTableView fx:id="bookListTreeTableView" layoutY="30.0" prefHeight="601.0" prefWidth="653.0"
+                      styleClass="anchor-background">
+        <columns>
+          <TreeTableColumn fx:id="bookCoverColumn" prefWidth="217.0" text="Book Cover"/>
+          <TreeTableColumn fx:id="bookNameColumn" prefWidth="217.0" text="Book Name"/>
+          <TreeTableColumn fx:id="authorColumn" prefWidth="217.0" text="Book Author"/>
+        </columns>
+    </JFXTreeTableView>
+</AnchorPane>

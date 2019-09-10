@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ElectronicBookManagementSystem:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ElectronicBookManagementSystem_jar</output-path>
+    <root id="archive" name="ElectronicBookManagementSystem.jar">
+      <element id="module-output" name="ElectronicBookManagementSystem" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Libraries for FBLA/jfoenix-8.0.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Libraries for FBLA/jfoenix-9.0.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Libraries for FBLA/sqlite-jdbc-3.23.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../Libraries for FBLA/controlsfx-8.40.14.jar" path-in-jar="/" />
+      <element id="library" level="project" name="jfoenix-8.0.8" />
+      <element id="library" level="application" name="javafx11" />
+    </root>
+  </artifact>
+</component>

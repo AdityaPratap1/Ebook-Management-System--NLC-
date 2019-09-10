@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0"
+            prefWidth="652.0" styleClass="anchor-background" stylesheets="@../../StyleSheets_Images/LogInStyle.css"
+            xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Student.HelpScreenFiles.DashBoardHelpScreenController">
+    <JFXTextArea layoutX="14.0" layoutY="25.0" prefHeight="403.0" prefWidth="623.0"
+                 text="The student dashboard is the first screen that loads when the student logs in . The dashboard consists of three major elements: The redemption code, the glimpse of issued books table and the popular books table.&#10;1. The redemption code for the student is displayed on top of the table.&#10;2. The “Glimpse of Issued Books” table displays up to three books that the student has issued. In order to view all the books that the student has issued, he/she must click the “view all” button located on top of the table.&#10;3. The popular books  buttons show the most popular (issued) books in the system. Clicking on the book leads to a issue screen where you can issue the book using your redemption code.">
+        <font>
+          <Font size="20.0"/>
+        </font>
+    </JFXTextArea>
+    <ImageView fx:id="imageView" fitHeight="175.0" fitWidth="220.0" layoutX="38.0" layoutY="446.0"
+               pickOnBounds="true" preserveRatio="true">
+    </ImageView>
+    <JFXButton layoutX="370.0" layoutY="509.0" onAction="#loadCatalogHelpScreen" styleClass="login-button"
+               text="Next: Catalog ">
+        <font>
+          <Font size="13.0"/>
+        </font>
+    </JFXButton>
+</AnchorPane>

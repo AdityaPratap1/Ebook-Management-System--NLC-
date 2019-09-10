@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="640.0" prefWidth="652.0" styleClass="anchor-background"
+            stylesheets="@../../StyleSheets_Images/LogInStyle.css" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Manager.HelpScreenFiles.WeeklyReportHelpController">
+    <JFXTextArea layoutX="14.0" layoutY="14.0" prefHeight="343.0" prefWidth="623.0"
+                 text="The weekly report screen displays 3 elements. The elements include issue history, issue history by genre, and issue count.&#10;1. The first element, weekly issue report, displays books issued this week, the student who issued the book, and the date they issued it on.&#10;2. The second element, issue by genre chart, shows a chart that displays issue history by genre.&#10;3. The third element, issue count, displays the number of times a book has been issued.&#10;">
+        <font>
+          <Font size="22.0"/>
+        </font>
+    </JFXTextArea>
+    <JFXButton layoutX="252.0" layoutY="459.0" onAction="#loadCatalogHlepScreen" styleClass="login-button"
+               text="Next: Catalog Help">
+        <font>
+          <Font size="15.0"/>
+        </font>
+    </JFXButton>
+</AnchorPane>

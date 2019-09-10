@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0"
+            prefWidth="652.0" styleClass="anchor-background" stylesheets="@../../StyleSheets_Images/LogInStyle.css"
+            xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Student.HelpScreenFiles.StudentCatalogHelpScreenController">
+    <JFXTextArea layoutX="4.0" layoutY="14.0" prefHeight="422.0" prefWidth="645.0"
+                 text="The catalog holds all the available books in the system. In the catalog screen, you will see a table with an image of the book and the name of the author. &#10;1. You can search for books or authors in the search field.&#10;2. You may double click on a book to view all details about the book and issue the book.&#10;3. In the issue book screen, you will see all the information relating to the selected book and a button named “issue book” to issue the book.&#10;4. You will be required to enter your redemption code in order to issue the book.&#10;5. Once you issue the book, the book will be removed from the catalog and placed in your “Issued Books” screen. Any other student in the system will also notice this change when they log in.&#10;">
+        <font>
+          <Font size="20.0"/>
+        </font>
+    </JFXTextArea>
+    <ImageView fx:id="imageView" fitHeight="176.0" fitWidth="233.0" layoutX="36.0" layoutY="445.0" pickOnBounds="true"
+               preserveRatio="true"/>
+    <JFXButton layoutX="408.0" layoutY="508.0" onAction="#loadIssuedBooksScreen" styleClass="login-button"
+               text="Next: Issued Books">
+        <font>
+          <Font size="13.0"/>
+        </font>
+    </JFXButton>
+</AnchorPane>

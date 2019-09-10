@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signUpClose" onMouseDragged="#draggedSignUpScreen" onMousePressed="#pressedSignUpScreen"
+            prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #f5f5f5;" styleClass="login_background"
+            stylesheets="@../StyleSheets_Images/LogInStyle.css" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUp.SignUpScreenController">
+    <Circle fx:id="profilePictureCircle" fill="WHITE" layoutX="303.0" layoutY="72.0" radius="44.0" stroke="BLACK"
+            strokeType="INSIDE"
+            style="-fx-fill: C:\Users\Aditya Pratap\Desktop\ElectronicBookManagementSystem\src\blank.png;"/>
+    <JFXTextField fx:id="firstNameTxt" alignment="TOP_LEFT" focusColor="#2a2e30" labelFloat="true" layoutX="54.0"
+                  layoutY="158.0" promptText="First Name" styleClass="text-fields"
+                  stylesheets="@../StyleSheets_Images/LogInStyle.css" unFocusColor="#9e9e9e"/>
+    <JFXTextField fx:id="lastNameTxt" labelFloat="true" layoutX="54.0" layoutY="224.0" promptText="Last Name"
+                  stylesheets="@../StyleSheets_Images/LogInStyle.css" unFocusColor="#9e9e9e">
+        <styleClass>
+          <String fx:value="text-fields"/>
+          <String fx:value="text-fields"/>
+        </styleClass>
+    </JFXTextField>
+    <JFXDatePicker fx:id="dobTxt" defaultColor="#2a2e30" layoutX="54.0" layoutY="299.0" promptText="Date of Birth"/>
+    <JFXTextField fx:id="studentIdTxt" labelFloat="true" layoutX="54.0" layoutY="374.0"
+                  promptText="Student ID (Skip if Manager)" styleClass="text-fields"/>
+    <JFXTextField fx:id="gradeTxt" labelFloat="true" layoutX="54.0" layoutY="450.0" prefHeight="25.0" prefWidth="146.0"
+                  promptText=" Grade (Skip if Manager)" styleClass="text-fields"/>
+    <JFXTextField fx:id="usernameTxt" labelFloat="true" layoutX="393.0" layoutY="158.0" promptText="Username"
+                  styleClass="text-fields"/>
+    <JFXPasswordField fx:id="passwordTxt" labelFloat="true" layoutX="393.0" layoutY="224.0" promptText="Password"
+                      styleClass="text-fields"/>
+    <JFXPasswordField fx:id="confirmPassTxt" labelFloat="true" layoutX="393.0" layoutY="298.0"
+                      promptText="Confirm Password" styleClass="text-fields"/>
+    <JFXComboBox fx:id="chooseRoleComboBox" labelFloat="true" layoutX="393.0" layoutY="374.0" prefHeight="29.0"
+                 prefWidth="146.0" promptText="Choose Role" styleClass="text-fields"/>
+    <JFXTextField fx:id="emailTxt" labelFloat="true" layoutX="393.0" layoutY="450.0" prefHeight="25.0" prefWidth="146.0"
+                  promptText="Email (optional)" styleClass="text-fields"/>
+    <JFXButton fx:id="signUpUserbtn" layoutX="225.0" layoutY="520.0" onAction="#signUpUser" styleClass="login-button"
+               stylesheets="@../StyleSheets_Images/LogInStyle.css" text="Sign Up"/>
+    <JFXButton fx:id="signUpCancelBtn" layoutX="320.0" layoutY="520.0" onAction="#cancelSignUp"
+               styleClass="login-button" text="Cancel"/>
+    <ImageView fx:id="signUpMinimize" fitHeight="49.0" fitWidth="30.0" layoutX="500.0" layoutY="22.0"
+               onMouseClicked="#signUpMinimize" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../StyleSheets_Images/Images/minimize.png"/>
+    </ImageView>
+    <ImageView fitHeight="30.0" fitWidth="23.0" layoutX="539.0" layoutY="25.0" onMouseClicked="#signUpClose"
+               pickOnBounds="true" preserveRatio="true">
+        <Image url="@../StyleSheets_Images/Images/close.png"/>
+    </ImageView>
+    <JFXButton fx:id="uploadImageButton" layoutX="255.0" layoutY="131.0" onAction="#uploadImage"
+               styleClass="login-button" text="Upload Picture"/>
+    <Label fx:id="warningLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="225.0" layoutY="559.0" text="Label"
+           textFill="RED">
+        <font>
+          <Font size="18.0"/>
+        </font>
+    </Label>
+</AnchorPane>

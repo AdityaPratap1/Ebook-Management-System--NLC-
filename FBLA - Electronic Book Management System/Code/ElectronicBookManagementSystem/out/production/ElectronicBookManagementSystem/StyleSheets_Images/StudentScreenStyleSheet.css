@@ -1,0 +1,24 @@
+.hbox:hover{
+
+    -fx-border-width: 1 7 1 1 ; -fx-border-color: #2a2e37 #21d2cf  #2a2e37 #2a2e37   ;
+
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.recombooks-button{
+    -fx-background-radius: 20;
+    -fx-background-color: #2a2e37;
+    -fx-opacity: 0.8;
+}
+
+.recombooks-button:hover{
+    -fx-opacity: 1;
+}
+
+.table-view-book{
+    -fx-background-radius: 0 0 30 0;
+}

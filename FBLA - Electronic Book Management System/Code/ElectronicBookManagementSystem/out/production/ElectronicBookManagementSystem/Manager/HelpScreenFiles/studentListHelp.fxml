@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="600.0" styleClass="anchor-background"
+            stylesheets="@../../StyleSheets_Images/LogInStyle.css" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Manager.HelpScreenFiles.StudentListHelpController">
+    <JFXTextArea layoutX="5.0" layoutY="14.0" prefHeight="373.0" prefWidth="588.0"
+                 text="The Student List Screen displays all the students registered in the system. The table view shows the&#10;profile picture and student name.&#10;1. You may double click on the student to open a student control window.&#10;2. In the student control window, you can suspend or delete a student in the system.&#10;3. You can add a student to the system as well. Sample data is provided in the project folder.">
+        <font>
+          <Font size="25.0"/>
+        </font>
+    </JFXTextArea>
+    <ImageView fitHeight="216.0" fitWidth="295.0" layoutX="25.0" layoutY="402.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../HelpScreenImages/studentlist.png"/>
+    </ImageView>
+</AnchorPane>

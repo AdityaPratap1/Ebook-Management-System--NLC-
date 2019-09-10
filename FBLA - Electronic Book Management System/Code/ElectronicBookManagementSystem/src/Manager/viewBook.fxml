@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0"
+            prefWidth="652.0" styleClass="anchor-background" stylesheets="@../StyleSheets_Images/LogInStyle.css"
+            xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Manager.ViewBookController">
+    <ImageView fx:id="bookImage" fitHeight="130.0" fitWidth="150.0" layoutX="264.0" layoutY="44.0"
+               pickOnBounds="true" preserveRatio="true"
+               style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 20, 0, 0, 0);;">
+        <Image url="@../SignUp/blank.png"/>
+    </ImageView>
+    <JFXTextField fx:id="bookNameLabel" editable="false" labelFloat="true" layoutX="73.0" layoutY="228.0"
+                  promptText="Book Name" styleClass="text-fields" stylesheets="@../StyleSheets_Images/LogInStyle.css"/>
+    <JFXTextField fx:id="authorFnameLabel" editable="false" labelFloat="true" layoutX="73.0" layoutY="318.0"
+                  promptText="Author First Name" styleClass="text-fields"
+                  stylesheets="@../StyleSheets_Images/LogInStyle.css"/>
+    <JFXTextField fx:id="authorLnameLabel" editable="false" labelFloat="true" layoutX="73.0" layoutY="414.0"
+                  promptText="Author Last Name" styleClass="text-fields"
+                  stylesheets="@../StyleSheets_Images/LogInStyle.css"/>
+    <JFXTextField fx:id="bookGenreLabel" editable="false" labelFloat="true" layoutX="414.0" layoutY="228.0"
+                  promptText="Genre" styleClass="text-fields" stylesheets="@../StyleSheets_Images/LogInStyle.css"/>
+    <JFXTextField fx:id="bookIsbnLabel" editable="false" labelFloat="true" layoutX="414.0" layoutY="318.0"
+                  styleClass="text-fields" stylesheets="@../StyleSheets_Images/LogInStyle.css" text="ISBN Number"/>
+    <JFXButton layoutX="300.0" layoutY="485.0" onAction="#loadManagerBookListScreen" styleClass="login-button"
+               text="Back">
+        <font>
+          <Font size="13.0"/>
+        </font>
+    </JFXButton>
+</AnchorPane>

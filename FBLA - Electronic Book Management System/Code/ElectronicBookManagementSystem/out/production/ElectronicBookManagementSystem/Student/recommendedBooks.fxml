@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0"
+            prefWidth="652.0" style="-fx-background-color: #f5f5f5;" styleClass="anchor-background"
+            stylesheets="@../StyleSheets_Images/LogInStyle.css" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Student.RecommendedBooksController">
+    <JFXButton layoutX="39.0" layoutY="91.0" prefHeight="150.0" prefWidth="150.0" styleClass="recombooks-button"
+               stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css"/>
+    <JFXButton layoutX="39.0" layoutY="406.0" prefHeight="150.0" prefWidth="150.0" styleClass="recombooks-button"
+               stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css"/>
+    <JFXButton layoutX="251.0" layoutY="241.0" prefHeight="150.0" prefWidth="150.0" styleClass="recombooks-button"
+               stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css"/>
+    <JFXButton layoutX="465.0" layoutY="91.0" prefHeight="150.0" prefWidth="150.0" styleClass="recombooks-button"
+               stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css"/>
+    <JFXButton layoutX="465.0" layoutY="406.0" prefHeight="150.0" prefWidth="150.0" styleClass="recombooks-button"
+               stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css"/>
+    <ImageView fx:id="recomBook1" fitHeight="122.0" fitWidth="116.0" layoutX="80.0" layoutY="105.0"
+               onMouseClicked="#loadIssueBookScreen" pickOnBounds="true" preserveRatio="true"/>
+    <ImageView fx:id="recomBook2" fitHeight="122.0" fitWidth="116.0" layoutX="508.0" layoutY="105.0"
+               onMouseClicked="#loadIssueBookScreen" pickOnBounds="true" preserveRatio="true"/>
+    <ImageView fx:id="recomBook3" fitHeight="122.0" fitWidth="116.0" layoutX="293.0" layoutY="255.0"
+               onMouseClicked="#loadIssueBookScreen" pickOnBounds="true" preserveRatio="true"/>
+    <ImageView fx:id="recomBook4" fitHeight="122.0" fitWidth="116.0" layoutX="80.0" layoutY="420.0"
+               onMouseClicked="#loadIssueBookScreen" pickOnBounds="true" preserveRatio="true"/>
+    <ImageView fx:id="recomBook5" fitHeight="122.0" fitWidth="116.0" layoutX="508.0" layoutY="420.0"
+               onMouseClicked="#loadIssueBookScreen" pickOnBounds="true" preserveRatio="true"/>
+    <Label layoutX="204.0" layoutY="14.0" text="Based on your Issue History">
+        <font>
+          <Font size="20.0"/>
+        </font>
+    </Label>
+    <Label fx:id="issueWarningLabel" layoutX="196.0" layoutY="52.0" textFill="#ff0101">
+        <font>
+          <Font size="16.0"/>
+        </font>
+    </Label>
+</AnchorPane>

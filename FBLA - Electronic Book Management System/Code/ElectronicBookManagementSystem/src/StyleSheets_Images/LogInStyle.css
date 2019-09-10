@@ -1,0 +1,54 @@
+{
+    -fx-primary: #2A2E37;
+
+}
+
+.login_background {
+
+    -fx-background-color: white;
+    -fx-background-radius: 30 30 30 30;
+}
+
+.vbox_background {
+
+    -fx-background-color: -fx-primary;
+    -fx-background-radius: 0 30 30 0;
+}
+
+.login-button {
+    -fx-border-color: -fx-primary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+.login-button:hover {
+    -fx-border-color: -fx-primary;
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: white;
+}
+
+.contorls:hover{
+    -fx-cursor: hand;
+}
+
+.text-fields{
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: black;
+    -fx-font-size: 13px;
+    -jfx-focus-color: #2a2e30;
+    -jfx-unfocus-color: #9e9e9e
+
+}
+
+.jfx-date-picker>.text-field{
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: black;
+    -jfx-unfocus-color: #9e9e9e;
+    -jfx-focus-color: #2a2e30;
+
+}
+
+.anchor-background{
+
+    -fx-background-radius: 0 0 30 0;
+}

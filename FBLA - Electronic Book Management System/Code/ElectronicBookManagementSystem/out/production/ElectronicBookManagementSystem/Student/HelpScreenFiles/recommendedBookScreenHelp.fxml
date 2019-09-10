@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="635.0" prefWidth="652.0" styleClass="anchor-background"
+            stylesheets="@../../StyleSheets_Images/LogInStyle.css" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Student.HelpScreenFiles.RecommendedBookScreenHelpController">
+    <JFXTextArea layoutX="4.0" layoutY="6.0" prefHeight="420.0" prefWidth="645.0"
+                 text="The recommended books screen shows book recommendations for the user.&#10;1. In order to unlock the recommended books feature, you need to have issued at least 5 books since the time of account creation. You do not need to issue 5 books every time you log in.&#10;2. The recommendations work by looking at your most issued books in the past and picking random books that fit your issue trend. The system will not recommend books that are currently issued by you.&#10;3. Clicking on the books will lead you to the issue book screen.&#10;">
+        <font>
+          <Font size="23.0"/>
+        </font>
+    </JFXTextArea>
+    <ImageView fitHeight="180.0" fitWidth="329.0" layoutX="69.0" layoutY="441.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../HelpScreenImages/recomBooks.png"/>
+    </ImageView>
+</AnchorPane>

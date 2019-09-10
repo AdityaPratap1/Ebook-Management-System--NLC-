@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginScreenPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+            minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#dragged" onMousePressed="#pressed"
+            prefHeight="400.0" prefWidth="550.0" style="-fx-background-color: #f5f5f5;" styleClass="login_background"
+            stylesheets="@../StyleSheets_Images/LogInStyle.css" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogIn.LogInScreenController">
+    <Label fx:id="logInLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="278.0" layoutY="31.0"
+           prefHeight="43.0" prefWidth="151.0" text="Log In">
+        <font>
+          <Font name="Arial" size="32.0"/>
+        </font>
+    </Label>
+    <JFXTextField fx:id="loginUsernameTxt" alignment="CENTER" focusColor="#2a2e30" labelFloat="true" layoutX="281.0"
+                  layoutY="110.0" promptText="Username" unFocusColor="#9e9e9e">
+        <font>
+          <Font size="14.0"/>
+        </font>
+    </JFXTextField>
+    <JFXPasswordField fx:id="loginPasswordTxt" alignment="CENTER" focusColor="#2a2e30" labelFloat="true" layoutX="281.0"
+                      layoutY="170.0" promptText="Password" unFocusColor="#9e9e9e">
+        <font>
+          <Font size="14.0"/>
+        </font>
+    </JFXPasswordField>
+    <JFXButton fx:id="logInUserBtn" layoutX="287.0" layoutY="276.0" onAction="#logInUser" styleClass="login-button"
+               stylesheets="@../StyleSheets_Images/LogInStyle.css" text="Log In"/>
+    <JFXButton fx:id="signUpButton" layoutX="377.0" layoutY="276.0" onAction="#signUpUser" styleClass="login-button"
+               text="Sign Up"/>
+    <JFXCheckBox fx:id="showPasswordCBox" checkedColor="#2a2e30" layoutX="308.0" layoutY="228.0"
+                 onAction="#showPassword" text="Show Password"/>
+    <ImageView fitHeight="30.0" fitWidth="32.0" layoutX="237.0" layoutY="185.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../StyleSheets_Images/Images/key.png"/>
+    </ImageView>
+    <ImageView fitHeight="43.0" fitWidth="41.0" layoutX="226.0" layoutY="120.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../StyleSheets_Images/Images/face.jpg"/>
+    </ImageView>
+    <ImageView fx:id="logInMinimize" fitHeight="30.0" fitWidth="24.0" layoutX="462.0" layoutY="12.0"
+               onMouseClicked="#minimizeClick" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;"
+               styleClass="contorls">
+        <Image url="@../StyleSheets_Images/Images/minimize.png"/>
+    </ImageView>
+    <ImageView fx:id="logInClose" fitHeight="17.0" fitWidth="17.0" layoutX="506.0" layoutY="15.0"
+               onMouseClicked="#closeClick" pickOnBounds="true" preserveRatio="true" styleClass="contorls">
+        <Image url="@../StyleSheets_Images/Images/close.png"/>
+    </ImageView>
+    <AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="400.0" prefWidth="150.0" styleClass="vbox_background"
+                stylesheets="@../StyleSheets_Images/LogInStyle.css">
+        <ImageView fitHeight="168.0" fitWidth="182.0" layoutX="-8.0" layoutY="120.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@../StyleSheets_Images/Images/book.png"/>
+        </ImageView>
+        <Label layoutX="41.0" layoutY="99.0" prefHeight="41.0" prefWidth="76.0" text="FBLA " textFill="WHITE">
+            <font>
+                <Font name="Arial Black" size="21.0"/>
+            </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="266.0" prefHeight="43.0" prefWidth="94.0" text="E-Book" textFill="WHITE">
+            <font>
+                <Font name="Arial Black" size="22.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+    <Label fx:id="warningLbl" alignment="CENTER" contentDisplay="CENTER" layoutX="295.0" layoutY="338.0" text="Label"
+           textFill="RED">
+        <font>
+          <Font size="15.0"/>
+        </font>
+    </Label>
+    <JFXTextField fx:id="passwordTextField" alignment="CENTER" focusColor="#2a2e30" labelFloat="true" layoutX="280.0"
+                  layoutY="170.0" prefHeight="25.0" prefWidth="160.0" promptText="Password" unFocusColor="#9e9e9e">
+        <font>
+          <Font size="14.0"/>
+        </font>
+    </JFXTextField>
+</AnchorPane>

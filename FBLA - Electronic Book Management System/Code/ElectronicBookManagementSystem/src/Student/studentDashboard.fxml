@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0"
+            prefWidth="652.0" styleClass="anchor-background" stylesheets="@../StyleSheets_Images/LogInStyle.css"
+            xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Student.StudentDashboardController">
+    <JFXTreeTableView fx:id="bookGlimpseTableView" layoutX="1.0" layoutY="86.0" prefHeight="231.0" prefWidth="652.0">
+        <columns>
+          <TreeTableColumn fx:id="bookCoverColumn" prefWidth="217.0" style="-fx-text-fill: black;" text="Book Cover"/>
+          <TreeTableColumn fx:id="bookNameColumn" prefWidth="217.0" text="Book Name"/>
+          <TreeTableColumn fx:id="authorColumn" prefWidth="217.0" text="Author"/>
+        </columns>
+    </JFXTreeTableView>
+    <Label layoutX="49.0" layoutY="38.0" style="-fx-font-family: Roboto Medium;" text="Glimpse of Books Issued">
+        <font>
+          <Font name="Garamond" size="28.0"/>
+        </font>
+    </Label>
+    <JFXButton layoutX="430.0" layoutY="41.0" onAction="#viewAllIssuedBooks" styleClass="login-button" text="View all">
+        <font>
+          <Font size="13.0"/>
+        </font>
+    </JFXButton>
+    <Label layoutX="46.0" layoutY="351.0" style="-fx-font-family: Roboto Medium;"
+           text="Most Popular Books (Click to Issue)">
+        <font>
+          <Font name="Garamond" size="28.0"/>
+        </font>
+    </Label>
+    <JFXButton id="button1" fx:id="mostPopBookBtn1" layoutX="23.0" layoutY="436.0" opacity="0.85" prefHeight="150.0"
+               prefWidth="120.0" style="-fx-background-color: #2a2e37; -fx-background-radius: 20;"
+               styleClass="recombooks-button" stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css"/>
+    <JFXButton fx:id="mostPopBookBtn2" layoutX="184.0" layoutY="436.0" opacity="0.85" prefHeight="150.0"
+               prefWidth="120.0" style="-fx-background-color: #2a2e37; -fx-background-radius: 20;"
+               styleClass="recombooks-button" stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css"
+               text="Button"/>
+    <JFXButton fx:id="mostPopBookBtn3" layoutX="342.0" layoutY="438.0" opacity="0.85" prefHeight="150.0"
+               prefWidth="120.0" style="-fx-background-color: #2a2e37; -fx-background-radius: 20;"
+               styleClass="recombooks-button" stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css"
+               text="Button"/>
+    <Label fx:id="redemptionCodeLabel" layoutX="49.0" layoutY="2.0" style="-fx-font-family: Roboto Light;"
+           textFill="#31b54b">
+        <font>
+          <Font size="16.0"/>
+        </font>
+    </Label>
+    <ImageView fx:id="mostPopBookImage1" fitHeight="111.0" fitWidth="130.0" layoutX="50.0" layoutY="456.0"
+               onMouseClicked="#loadIssueBookScreen" pickOnBounds="true" preserveRatio="true"/>
+    <ImageView fx:id="mostPopBookImage2" fitHeight="111.0" fitWidth="130.0" layoutX="215.0" layoutY="457.0"
+               onMouseClicked="#loadIssueBookScreen" pickOnBounds="true" preserveRatio="true"/>
+    <ImageView fx:id="mostPopBookImage3" fitHeight="111.0" fitWidth="130.0" layoutX="365.0" layoutY="457.0"
+               onMouseClicked="#loadIssueBookScreen" pickOnBounds="true" preserveRatio="true"/>
+    <JFXButton fx:id="mostPopBookBtn4" layoutX="507.0" layoutY="438.0" opacity="0.85" prefHeight="150.0"
+               prefWidth="120.0" style="-fx-background-color: #2a2e37; -fx-background-radius: 20;"
+               styleClass="recombooks-button" stylesheets="@../StyleSheets_Images/StudentScreenStyleSheet.css"
+               text="Button"/>
+    <ImageView fx:id="mostPopBookImage4" fitHeight="121.0" fitWidth="120.0" layoutX="525.0" layoutY="451.0"
+               onMouseClicked="#loadIssueBookScreen" pickOnBounds="true" preserveRatio="true"/>
+</AnchorPane>

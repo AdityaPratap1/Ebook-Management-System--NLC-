@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="640.0" prefWidth="652.0" styleClass="anchor-background"
+            stylesheets="@../../StyleSheets_Images/LogInStyle.css" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Manager.HelpScreenFiles.CatalogHelpController">
+    <JFXTextArea layoutX="8.0" layoutY="8.0" prefHeight="412.0" prefWidth="633.0"
+                 text="The catalog holds all the available books in the system. In the catalog screen, you will see a table with an image of the book and the name of the author. &#10;1. You can search for books or authors in the search field.&#10;2. You may double click on a book to view all details about the book.&#10;3. In the details screen, you will see all the information relating to the selected book .&#10;4. You may add a new book as well. Sample data is given in the project folder.&#10;5. There might be a slight delay in adding depending upon the size of the image.&#10;">
+        <font>
+          <Font size="22.0"/>
+        </font>
+    </JFXTextArea>
+    <ImageView fitHeight="172.0" fitWidth="202.0" layoutX="232.0" layoutY="439.0" pickOnBounds="true"
+               preserveRatio="true">
+        <Image url="@../HelpScreenImages/catalog.png"/>
+    </ImageView>
+</AnchorPane>
